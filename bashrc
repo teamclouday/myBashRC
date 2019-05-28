@@ -9,8 +9,14 @@
 export CC=gcc
 export CXX=g++
 
-alias ls='ls --color=auto'
-alias grep='grep --color=auto'
+#set same dir in new tab
+source /etc/profile.d/vte.sh
+
+#set OpenGL GLX visual value for SDL2
+#export SDL_VIDEO_X11_VISUALID=0x024
+
+alias ls='ls --color=always'
+alias grep='grep --color=always'
 alias diff='diff --color=auto'
 
-PS1='\[\e[36m\][\t] \[\e[32m\e[1m\]\u\[\e[21m\e[39m\] \[\e[91m\]\w\[\e[39m\]\n \[\e[97m\]>\[\e[39m\] '
+PS1='\[\e[36m\][\t] \[\e[32m\e[1m\]\u\[\e[0m\e[39m\] \[\e[91m\]\w\[\e[39m\]\n \[\e[97m\]>\[\e[39m\] '
