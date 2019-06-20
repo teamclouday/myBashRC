@@ -18,5 +18,6 @@ source /etc/profile.d/vte.sh
 alias ls='ls --color=always'
 alias grep='grep --color=always'
 alias diff='diff --color=auto'
+alias rm='trash'
 
 PS1='\[\e[36m\][\t] \[\e[32m\e[1m\]\u\[\e[0m\e[39m\] \[\e[91m\]\w\[\e[39m\]\n \[\e[97m\]>\[\e[39m\] '
